@@ -6,20 +6,26 @@ const Section = (props) => {
   return (
     <div>
     <section className='section container'>
-        {props.users.map((item,index)=>(
         <table>
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>NAME</td>
+            <td>LASTNAME</td>
+            <td>AGE</td>
+            </tr>
+        </thead>
+        {props.users.map((item,index)=>(
+          <tbody>
         <tr>
-            <th>NAME</th>
-            <th>LASTNAME</th>
-            <th>AGE</th>
-        </tr>
-        <tr>
+            <td>{index+1}</td>
             <td>{item.name}</td>
             <td>{item.lastName}</td>
             <td>{item.age}</td>
         </tr>
+        </tbody>
+        ))}
     </table>
-    ))}
     </section>
     </div>
   )

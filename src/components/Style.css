@@ -38,6 +38,7 @@ header{
     flex-wrap: wrap;
 }
 table{
+    width: 80%;
     border: 1px solid white;
     margin: 15px 20px 0px 20px;
 }
